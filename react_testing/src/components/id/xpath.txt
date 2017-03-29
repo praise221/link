@@ -1,0 +1,47 @@
+/*
+	+div id
+	/html/head/title
+	//*[@id="app]
+	//*[@id="app"]/div
+	//*[@id="myDIV"]/h1
+	//*[@id="myDIV"]/form
+	//*[@id="myDIV"]/form/input	
+	//*[@id="myDIV"]/form/button
+	//*[@id="myDIV"]/table
+	//*[@id="myDIV"]/table/thead/tr/th[1]
+	//*[@id="myDIV"]/table/thead/tr/th[2]
+	//*[@id="myDIV"]/table/tbody/tr[1]/td[1]
+	//*[@id="myDIV"]/table/tbody/tr[1]/td[2]/button[1]
+	//*[@id="myDIV"]/table/tbody/tr[1]/td[2]/button[2]
+	//*[@id="myDIV"]/table/tbody/tr[2]/td[1]
+	//*[@id="myDIV"]/table/tbody/tr[2]/td[2]/button[1]
+	//*[@id="myDIV"]/table/tbody/tr[2]/td[2]/button[2]
+	
+	+h1 id
+	//*[@id="myTitle"]
+	
+	original src
+	//*[@id="app"]/div
+	//*[@id="app"]/div/h1
+	//*[@id="app"]/div/form
+	//*[@id="app"]/div/form/input
+	//*[@id="app"]/div/form/button
+	//*[@id="app"]/div/table
+	//*[@id="app"]/div/table/thead
+	//*[@id="app"]/div/table/thead/tr
+	//*[@id="app"]/div/table/thead/tr/th[1]
+	//*[@id="app"]/div/table/thead/tr/th[2]
+	//*[@id="app"]/div/table/tbody
+	//*[@id="app"]/div/table/tbody/tr[1]
+	//*[@id="app"]/div/table/tbody/tr[1]/td[1]
+	//*[@id="app"]/div/table/tbody/tr[1]/td[2]/button[1]
+	//*[@id="app"]/div/table/tbody/tr[1]/td[2]/button[2]
+	//*[@id="app"]/div/table/tbody/tr[2]
+	//*[@id="app"]/div/table/tbody/tr[2]/td[1]
+	//*[@id="app"]/div/table/tbody/tr[2]/td[2]/button[1]
+	//*[@id="app"]/div/table/tbody/tr[2]/td[2]/button[2]
+	
+	expect(window.document.evaluate('.//*[@id="myTitle"', window.document.documentElement,
+        null, window.XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.textContent).to.equal('React ToDos App');
+	
+	*/
