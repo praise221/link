@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for test_app.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> test_app.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>72/81</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>16/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>72/81</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {mount, shallow } from 'enzyme';
+import {expect} from 'chai';
+import {spy, stub} from 'sinon';
+import TodosList from '../src/components/todos-list';
+import CreateToDo from '../src/components/create-todo';
+import TodosItem from '../src/components/todos-list-item';
+import App from '../src/components/app';
+&nbsp;
+import 'jsdom-global/register';
+import _ from 'lodash';
+&nbsp;
+&nbsp;
+&nbsp;
+describe('Test app.js', function() {
+  it('constructor should be 2 todos there.', function () {
+    const wrapper = shallow(&lt;App /&gt;);
+	//console.log(wrapper.instance().state);
+    expect(wrapper.instance().state['todos']).to.have.length(2);
+  }); 
+	
+  it('should be a h1 there.', function () {
+    const wrapper = shallow(&lt;App&gt;&lt;div&gt;&lt;/div&gt;&lt;/App&gt;);
+  
+	//var x= document.getElementById();
+	//console.log(document.getElementById(x));
+	expect(wrapper.find('div').first().props()['id']).to.equal('myDIV');
+	expect(wrapper.find('h1').first().props()['id']).to.equal('myTitle');
+    expect(wrapper.find('h1')).to.have.length(1);
+	});
+&nbsp;
+  it('should be a h1 React ToDos App.', function () {
+    const wrapper = shallow(&lt;App&gt;&lt;div&gt;&lt;/div&gt;&lt;/App&gt;);
+    expect(wrapper.find('h1').first().text()).to.equal('React ToDos App');
+  });
+  
+  it('should be a CreateToDo ', function () {
+    const wrapper = shallow(&lt;App&gt;&lt;div&gt;&lt;/div&gt;&lt;/App&gt;);
+    expect(wrapper.find(CreateToDo)).to.have.length(1);
+  });
+  
+  it('should be a TodosList ', function () {
+    const wrapper = shallow(&lt;App&gt;&lt;div&gt;&lt;/div&gt;&lt;/App&gt;);
+    expect(wrapper.find(TodosList)).to.have.length(1);
+  });
+ 
+  it('should be 2 TodosItem ', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem)).to.have.length(2);
+  });
+&nbsp;
+  it('The first TodosItem is "make React tutorial"', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).first().props()['task']).to.equal('make React tutorial');
+  });
+  
+  it('The first TodosItem "make React tutorial" is not completed', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).first().props()['task']).to.equal('make React tutorial');
+    expect(wrapper.find(TodosItem).first().props()['isCompleted']).to.equal(false);
+  });
+&nbsp;
+  it('The last TodosItem is "eat dinner"', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal('eat dinner');
+  });
+&nbsp;
+  it('The last TodosItem "eat dinner" is completed', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal('eat dinner');
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(true);
+  });
+&nbsp;
+  it('toggleTask(): Toggle TodosItem "eat dinner" to uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal('eat dinner');
+    wrapper.instance().toggleTask('eat dinner');
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);</span>
+  });
+  
+  it('toogleTask(): Toggle TodosItem "make React tutorial" to uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    expect(wrapper.find(TodosItem).first().props()['task']).to.equal('make React tutorial');
+    wrapper.instance().toggleTask('make React tutorial');
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.find(TodosItem).first().props()['isCompleted']).to.equal(true);</span>
+  });
+&nbsp;
+  it('createTask(): create a new task "A" and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let newTask='A';
+    wrapper.instance().createTask(newTask);
+    expect(wrapper.instance().state['todos']).to.have.length(3);
+    expect(wrapper.instance().state['todos'][2]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][2]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(3);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+  
+  it('saveTask(): change "A" task to "a"', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let oldTask='A';
+    let newTask='a';
+    wrapper.instance().saveTask(oldTask,newTask);
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.instance().state['todos']).to.have.length(3);</span>
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.instance().state['todos'][2]['task']).to.equal(newTask);</span>
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.instance().state['todos'][2]['isCompleted']).to.equal(false);</span>
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.find(TodosItem)).to.have.length(3);</span>
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);</span>
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);</span>
+  });
+&nbsp;
+  it('deleteTask(): remove task "a"', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let oldTask='a';
+    wrapper.instance().deleteTask(oldTask);
+<span class="cstat-no" title="statement not covered" >    expect(wrapper.instance().state['todos']).to.have.length(2);</span>
+  });
+  
+  
+/*  
+  it('createTask(): create a new task "你好" and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let newTask='你好';
+    wrapper.instance().createTask(newTask);
+    expect(wrapper.instance().state['todos']).to.have.length(3);
+    expect(wrapper.instance().state['todos'][2]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][2]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(3);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+  
+  it('createTask(): create a new task "Ａ" and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let newTask='Ａ';
+    wrapper.instance().createTask(newTask);
+    expect(wrapper.instance().state['todos']).to.have.length(4);
+    expect(wrapper.instance().state['todos'][3]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][3]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(4);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+&nbsp;
+  it('createTask(): create a new task " " and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;);
+    let newTask=' ';
+    wrapper.instance().createTask(newTask);
+    expect(wrapper.instance().state['todos']).to.have.length(5);
+    expect(wrapper.instance().state['todos'][4]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][4]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(5);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+  
+  it('createTask(): create a new task "，、。．？！～＄％＠＆ ＃＊" and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;)
+    let newTask='，、。．？！～＄％＠＆ ＃＊';
+    wrapper.instance().createTask(newTask);
+	expect(wrapper.instance().state['todos']).to.have.length(6);
+    expect(wrapper.instance().state['todos'][5]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][5]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(6);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+	//console.log(wrapper.find(TodosItem).last().props()['task']);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+  
+   it('createTask(): create a new task "/ \ &lt; &gt; : * " ? |" and it is uncompleted', function () {
+    const wrapper = mount(&lt;App /&gt;)
+    let newTask='/ \ &lt; &gt; : * " ? |';
+    wrapper.instance().createTask(newTask);
+    expect(wrapper.instance().state['todos']).to.have.length(7);
+    expect(wrapper.instance().state['todos'][6]['task']).to.equal(newTask);
+    expect(wrapper.instance().state['todos'][6]['isCompleted']).to.equal(false);
+    expect(wrapper.find(TodosItem)).to.have.length(7);
+    expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
+    expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
+  });
+*/  
+  
+});
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 31 2017 16:59:58 GMT+0800 (台北標準時間)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

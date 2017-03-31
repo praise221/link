@@ -7,6 +7,9 @@ import CreateTodo from '../src/components/create-todo';
 import TodosItem from '../src/components/todos-list-item';
 import App from '../src/components/app';
 
+import 'jsdom-global/register';
+import _ from 'lodash';
+
 describe('Test todos-list-item', function() {
   var isToggleTaskCalled,isDeleteTaskCalled,isSaveTaskCalled=false;
   let fakeToggleTask = function(task){isToggleTaskCalled=true;};

@@ -4,6 +4,9 @@ import {expect} from 'chai';
 import {spy, stub} from 'sinon'
 import ListHeader from '../src/components/todos-list-header';
 
+import 'jsdom-global/register';
+import _ from 'lodash';
+
 describe('Test todos-list-header', function() {
 
   it('render(): <thead><tr><th>Task</th><th>Action</th></tr></thead>', function () {

@@ -6,7 +6,10 @@ import TodosList from '../src/components/todos-list';
 import CreateToDo from '../src/components/create-todo';
 import TodosItem from '../src/components/todos-list-item';
 import App from '../src/components/app';
-//import _ from 'lodash';
+
+import 'jsdom-global/register';
+import _ from 'lodash';
+
 
 
 describe('Test app.js', function() {
@@ -114,6 +117,8 @@ describe('Test app.js', function() {
     expect(wrapper.instance().state['todos']).to.have.length(2);
   });
   
+  
+/*  
   it('createTask(): create a new task "你好" and it is uncompleted', function () {
     const wrapper = mount(<App />);
     let newTask='你好';
@@ -174,6 +179,7 @@ describe('Test app.js', function() {
     expect(wrapper.find(TodosItem).last().props()['task']).to.equal(newTask);
     expect(wrapper.find(TodosItem).last().props()['isCompleted']).to.equal(false);
   });
+*/  
   
 });
 

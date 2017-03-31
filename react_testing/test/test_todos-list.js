@@ -8,6 +8,9 @@ import TodosItem from '../src/components/todos-list-item';
 import App from '../src/components/app';
 import ListHeader from '../src/components/todos-list-header';
 
+import 'jsdom-global/register';
+import _ from 'lodash';
+
 describe('Test todos-list.js', function() { 
 
 let fakeTodos = [{task: 'Ha', isCompleted: false},{task: 'Hi',isCompleted: true}];

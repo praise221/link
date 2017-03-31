@@ -7,9 +7,12 @@ import CreateTodo from '../src/components/create-todo';
 import TodosItem from '../src/components/todos-list-item';
 import App from '../src/components/app';
 
+import 'jsdom-global/register';
+import _ from 'lodash';
+
 describe('Test creat-todo.js', function() {
   it('Constructor with state {error: null}.', function () {
-    const wrapper = shallow(<CreateTodo />);
+    const wrapper = simport 'jsdom-global/register'hallow(<CreateTodo />);
     expect(wrapper.instance().state['error']).to.equal(null);
   });
   
